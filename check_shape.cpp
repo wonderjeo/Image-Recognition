@@ -1,13 +1,13 @@
 #include"main.h"
 int check_shape(char c)
 {
-	//ÔØÈëÍ¼Ïñ¡¢ÏÔÊ¾²¢×ª»¯Îª»Ò¶ÈÍ¼
+	//è½½å…¥å›¾åƒã€æ˜¾ç¤ºå¹¶è½¬åŒ–ä¸ºç°åº¦å›¾
 	Mat trainImage = imread("fenda.jpg"), trainImage_gray;
 
-	imshow("Ô­Ê¼Í¼", trainImage);
+	imshow("åŸå§‹å›¾", trainImage);
 	cvtColor(trainImage, trainImage_gray, CV_BGR2GRAY);
 
-	//¼ì²âSurf¹Ø¼üµã¡¢ÌáÈ¡ÑµÁ·Í¼ÏñÃèÊö·û
+	//æ£€æµ‹Surfå…³é”®ç‚¹ã€æå–è®­ç»ƒå›¾åƒæè¿°ç¬¦
 	vector<KeyPoint> train_keyPoint;
 	Mat trainDescriptor;
 	SurfFeatureDetector featureDetector(80);
@@ -15,42 +15,42 @@ int check_shape(char c)
 	SurfDescriptorExtractor featureExtractor;
 	featureExtractor.compute(trainImage_gray, train_keyPoint, trainDescriptor);
 
-	//´´½¨»ùÓÚFLANNµÄÃèÊö·ûÆ¥Åä¶ÔÏó
+	//213124214124124124
 	FlannBasedMatcher matcher;
 	vector<Mat> train_desc_collection(1, trainDescriptor);
 	matcher.add(train_desc_collection);
 	matcher.train();
 
-	//´´½¨ÊÓÆµ¶ÔÏó¡¢¶¨ÒåÖ¡ÂÊ
+	//åˆ›å»ºè§†é¢‘å¯¹è±¡ã€å®šä¹‰å¸§ç‡
 	VideoCapture cap(1);
 	int count;
-	unsigned int frameCount = 0;//Ö¡Êı
+	unsigned int frameCount = 0;//å¸§æ•°
 
-								//¡¾5¡¿²»¶ÏÑ­»·£¬Ö±µ½q¼ü±»°´ÏÂ
+								//ã€5ã€‘ä¸æ–­å¾ªç¯ï¼Œç›´åˆ°qé”®è¢«æŒ‰ä¸‹
 	while (char(waitKey(1)) != 'q')
 	{
-		//²ÎÊıÉèÖÃ
+		//å‚æ•°è®¾ç½®
 		count = 0;
 		int64 time0 = getTickCount();
 		Mat testImage, testImage_gray;
-		cap >> testImage;//²É¼¯ÊÓÆµµ½testImageÖĞ
+		cap >> testImage;//é‡‡é›†è§†é¢‘åˆ°testImageä¸­
 		if (testImage.empty())
 			continue;
 
-		//×ª»¯Í¼Ïñµ½»Ò¶È
+		//è½¬åŒ–å›¾åƒåˆ°ç°åº¦
 		cvtColor(testImage, testImage_gray, CV_BGR2GRAY);
 
-		//¼ì²âS¹Ø¼üµã¡¢ÌáÈ¡²âÊÔÍ¼ÏñÃèÊö·û
+		//æ£€æµ‹Så…³é”®ç‚¹ã€æå–æµ‹è¯•å›¾åƒæè¿°ç¬¦
 		vector<KeyPoint> test_keyPoint;
 		Mat testDescriptor;
 		featureDetector.detect(testImage_gray, test_keyPoint);
 		featureExtractor.compute(testImage_gray, test_keyPoint, testDescriptor);
 
-		//Æ¥ÅäÑµÁ·ºÍ²âÊÔÃèÊö·û
+		//åŒ¹é…è®­ç»ƒå’Œæµ‹è¯•æè¿°ç¬¦
 		vector<vector<DMatch> > matches;
 		matcher.knnMatch(testDescriptor, matches, 2);
 
-		//¸ù¾İÀÍÊÏËã·¨£¨Lowe's algorithm£©£¬µÃµ½ÓÅĞãµÄÆ¥Åäµã
+		//æ ¹æ®åŠ³æ°ç®—æ³•ï¼ˆLowe's algorithmï¼‰ï¼Œå¾—åˆ°ä¼˜ç§€çš„åŒ¹é…ç‚¹
 		vector<DMatch> goodMatches;
 		for (unsigned int i = 0; i < matches.size(); i++)
 		{
@@ -68,10 +68,10 @@ int check_shape(char c)
 			c_comn();
 			return 1;
 		}
-		//<6>»æÖÆÆ¥Åäµã²¢ÏÔÊ¾´°¿Ú
+		//<6>ç»˜åˆ¶åŒ¹é…ç‚¹å¹¶æ˜¾ç¤ºçª—å£
 		Mat dstImage;
 		drawMatches(testImage, test_keyPoint, trainImage, train_keyPoint, goodMatches, dstImage);
-		imshow("Æ¥Åä´°¿Ú", dstImage);
+		imshow("åŒ¹é…çª—å£", dstImage);
 	}
 
 	return 0;
