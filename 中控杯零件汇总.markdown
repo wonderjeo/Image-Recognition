@@ -17,6 +17,7 @@
 43*43*27mm
 
 ![](l298n.jpg)
+
 3.电源
 
 [https://item.taobao.com/item.htm?ut_sk=1.VgHhzt09JLUDACrUJ3cGvHXK_21380790_1480151851636.ScreenShot.1&id=36502490459&sourceType=item&cpp=1&shareurl=true&spm=a313p.22.9j.17076843867&short_name=h.10j1Ru&cv=AAcqUyED&app=chrome]
@@ -28,6 +29,7 @@
 [https://detail.tmall.com/item.htm?spm=a230r.1.14.1.LGoBp5&id=9163830606&cm_id=140105335569ed55e27b&abbucket=4]
 
 ![](空心杯电机.jpg)
+
 5.舵机995
 
 [https://item.taobao.com/item.htm?spm=a230r.1.14.170.Jv1Mos&id=530552357540&ns=1&abbucket=4#detail]
@@ -51,11 +53,13 @@
 [https://item.taobao.com/item.htm?spm=2013.1.0.0.jyNtso&id=36397707331]
 
 ![](Lban形板.jpg)
+
 9.联轴器
 
 [https://item.taobao.com/item.htm?spm=2013.1.20141003.10.nTxDMb&scm=1007.10011.60084.100200300000001&id=538265285270&pvid=c09a5a29-20ae-4f06-854f-216d7c090ef7]
 
 ![](联轴器.jpg)
+
 10.L形传感器连接架
 
 [https://item.taobao.com/item.htm?id=38118080810&ali_refid=a3_420434_1006:1103956568:N:%E8%A7%92%E7%A0%81:01dca35f0421035d3ab615ee04a07c25&ali_trackid=1_01dca35f0421035d3ab615ee04a07c25&spm=a230r.1.1957635.6.yb7bfR]
