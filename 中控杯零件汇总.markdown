@@ -14,7 +14,7 @@
 
 [https://detail.tmall.com/item.htm?id=41248562401&ali_refid=a3_430583_1006:1109983619:N:L298N:dd5f1833ac84128f6bceb216174f766a&ali_trackid=1_dd5f1833ac84128f6bceb216174f766a&spm=a230r.1.14.1.Co7T4k]
 
-43*43*27mm
+43* 43* 27mm
 
 ![](l298n.jpg)
 
@@ -22,7 +22,7 @@
 
 [https://item.taobao.com/item.htm?ut_sk=1.VgHhzt09JLUDACrUJ3cGvHXK_21380790_1480151851636.ScreenShot.1&id=36502490459&sourceType=item&cpp=1&shareurl=true&spm=a313p.22.9j.17076843867&short_name=h.10j1Ru&cv=AAcqUyED&app=chrome]
 
-135*42*26mm
+135* 42* 26mm
 
 4.电机：直流减速空心杯电机
 
@@ -34,19 +34,19 @@
 
 [https://item.taobao.com/item.htm?spm=a230r.1.14.170.Jv1Mos&id=530552357540&ns=1&abbucket=4#detail]
 
-40.7*19.7*42.9mm
+40.7* 19.7* 42.9mm
 
 6.全向轮
 
 [https://item.taobao.com/item.htm?spm=a230r.1.14.16.NO27CX&id=539368149432&ns=1&abbucket=4#detail]
 
-58*19mm
+58* 19mm
 
 7.Arduino Mega
 
 [https://item.taobao.com/item.htm?spm=a230r.1.14.33.cbrS12&id=520190101634&ns=1&abbucket=4#detail]
 
-101.6*53.4*20mm
+101.6* 53.4* 20mm
 
 8.L形板
 
@@ -64,4 +64,4 @@
 
 [https://item.taobao.com/item.htm?id=38118080810&ali_refid=a3_420434_1006:1103956568:N:%E8%A7%92%E7%A0%81:01dca35f0421035d3ab615ee04a07c25&ali_trackid=1_01dca35f0421035d3ab615ee04a07c25&spm=a230r.1.1957635.6.yb7bfR]
 
-20*20*16mm
+20* 20* 16mm
